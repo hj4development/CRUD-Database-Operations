@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript CRUD</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/model.js"></script>
+    <script src="js/contorller.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>ID:</td>
+            <td><span id="id"></span></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" class="clearfields"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input type="text" id="desc" class="clearfields"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" id="price" class="clearfields"></td>
+        </tr>
+        <tr>
+            <td>Quantity:</td>
+            <td><input type="text" id="qt" class="clearfields"></td>
+        </tr>
+        <tr>
+            <td>Url:</td>
+            <td><input type="text" id="url" class="clearfields"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                  <table>
+                      <tr>
+                          <td>
+                              <button id="add">Add</button>
+                              <button id="delete">Delete</button>
+                              <button id="search">Search (By Name)</button>
+                              <button id="update">Update</button>
+                              <button id="sort">Sort (By price)</button>
+                              <button id="clear">Clear Screen</button>
+                              <button id="save">Save</button>
+                              <button id="load">Load</button>
+                              <button id="clearStorage">Clear Storage</button>
+                          </td>
+                      </tr>
+                  </table>
+            </td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>Database</legend>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>NAME</td>
+                    <td>DESCRIPTION</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>URL</td>
+                    <td>MarkDel</td>
+                    <td>Edit</td>
+                </tr>
+            </thead>
+            <tbody id="itemlist">
+                
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+</html>
